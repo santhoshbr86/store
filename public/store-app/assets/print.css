@@ -1,0 +1,52 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; 
+       font-family: Roboto, "Helvetica Neue", sans-serif;
+     -webkit-print-color-adjust: exact
+    }
+
+
+
+    @media print {
+      h2 {
+          color:#000;
+      }
+      .print-view__header {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+      }
+
+      .cart-list {
+          list-style-type: none;
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          align-items: center;
+          width: 100%;
+      }
+      .cart-list li {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+        span {
+          width: 100px;
+          text-overflow: ellipsis;
+          margin-bottom: 20px;
+          text-align: start;
+        }
+        
+      }
+
+    }
+    .total-cost {
+      display: flex;
+      justify-content: right;
+      flex-direction: row;
+      margin-left: 40px;
+      text-align: right;
+    }
